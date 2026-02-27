@@ -1,0 +1,148 @@
+*{
+    margin:0px auto;
+    padding:0px;
+}
+
+header{
+    position:relative;
+    top:50px;
+    width:1200px;
+    height:100px;
+    background-color:azure;
+    border:0px solid black;
+    z-index:1;
+}
+
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+section{
+    width:1200px;
+    height:500px;
+    background-color:aqua;
+    position:relative;
+    
+}
+
+footer{
+    width:1200px;
+    height:100px;
+    background-color:beige;
+}
+.main{
+    position:absolute;
+    background-color:blanchedalmond;
+    right:50px;
+    top:50px;
+    text-align:center;
+    
+}
+.main>li{
+    float:left;
+    width:200px;
+}
+
+.main>li>a{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:blanchedalmond;
+}
+
+.sub{
+    display:none;
+}
+.sub>li>a{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:blanchedalmond;
+}
+
+.main>li:hover>a{
+    background-color:rgb(184, 125, 125);
+    color:white;
+}
+.sub>li:hover>a{
+    background-color:rgb(184, 125, 125);
+    color:white;
+}
+
+.imgs{
+    width:1200px;
+    height:300px;
+}
+.imgs>img{
+    width:100%;
+    position:absolute;
+    left:0;
+}
+
+.contents{
+    width:400px;
+    height:200px;
+    position:relative;
+    background-color:blanchedalmond;
+    float:left;
+}
+.contents>div{
+    clear:both;
+    position:absolute;
+    width:100%;
+    height:150px;
+    top:40px;
+    font-size:15px;
+}
+.tap>li{
+    float:left;
+    width:100px;
+    
+}
+
+.tap>li>a{
+    align-items:center;
+    text-justify:center;
+    width:100%;
+    display:flex;
+}
+.on-click{
+    background-color:blanchedalmond;
+    color:aquamarine;
+}
+#gallery{
+    display:none;
+    background-color:rgb(177, 138, 80);
+}
+
+#layer-wrap{
+    position:absolute;
+    z-index:3;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.2);
+    display:none;
+}
+#layer-wrap.active{
+    display:block;
+}
+#layer-popup{
+    width:500px;
+    height:400px;
+    top:50%;
+    left:50%;
+    border:solid 5px black;
+    background-color:gray;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    font-weight:bold;
+    font-size:13px;
+}
